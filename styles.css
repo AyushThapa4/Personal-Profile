@@ -1,0 +1,87 @@
+/* Background image for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* White text for better readability on dark backgrounds */
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    padding: 6rem 2rem 2rem; /* Extra padding at the top to account for the fixed header */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Image and form styles */
+#home img, .gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white; /* White border around images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form fields */
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #ff6600; /* Orange submit button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
